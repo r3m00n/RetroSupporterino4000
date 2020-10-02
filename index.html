@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="script.js" type="module" defer></script>
+    <link rel="icon" type="image/png" href="./profit-chart.png" />
+    <title>RetroSupporterino4000</title>
+  </head>
+
+  <body>
+    <h1>Retro Supporterino 4000</h1>
+
+    <div class="container">
+      <div class="chart">
+        <h2>PBI Abschlussrate</h2>
+        <div class="wrapper">
+          <canvas id="pbi-chart"></canvas>
+          <p><span id="pbi-percent"></span><span class="percent">%</span></p>
+          <div class="range">
+            <p>0</p>
+            <p id="pbi-total">31</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart">
+        <h2>Task Abschlussrate</h2>
+        <div class="wrapper">
+          <canvas id="task-chart"></canvas>
+          <p><span id="task-percent"></span><span class="percent">%</span></p>
+          <div class="range">
+            <p>0</p>
+            <p id="task-total"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart">
+        <h2>Succesful Time</h2>
+        <div class="wrapper">
+          <canvas id="time-chart"></canvas>
+          <p><span id="time-percent"></span><span class="percent">%</span></p>
+          <div class="range">
+            <p>0</p>
+            <p id="time-total"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="number">
+        <h2>Completed Time</h2>
+        <p id="time-number"></p>
+      </div>
+
+      <div class="number">
+        <h2>Ø Bearbeitungsdauer</br>eines PBI</h2>
+        <p id="pbi-number"></p>
+      </div>
+
+      <div class="number">
+        <h2>Ø Bearbeitungsdauer</br>einer Task</h2>
+        <p id="task-number"></p>
+      </div>
+    </div>
+  </body>
+</html>

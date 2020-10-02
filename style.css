@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+  font-size: 5rem;
+}
+
+h1,
+h2 {
+  color: gray;
+  text-align: center;
+}
+
+.container {
+  margin: 0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.chart,
+.number {
+  width: 30%;
+  margin: 1rem 0;
+}
+
+.number {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.number p {
+  font-size: 5rem;
+  letter-spacing: -8px;
+}
+
+#time-number {
+  margin-top: 1.65rem;
+}
+
+.wrapper {
+  height: 180px;
+  position: relative;
+}
+
+.chart h2 {
+  margin-bottom: 1rem;
+}
+
+.range {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 17% 0 17%;
+}
+
+.chart p :not(.range):not(.percent) {
+  position: absolute;
+  bottom: -8%;
+  left: 40%;
+  font-size: 3.5rem;
+}
+
+.percent {
+  position: absolute;
+  bottom: -5%;
+  left: 56%;
+  font-size: 2rem;
+}
+
+#time-number {
+  color: #b2ff66;
+}
+
+#pbi-number {
+  color: #ffb366;
+}
+
+#task-number {
+  color: #66ff66;
+}
+
+@media (max-width: 1390px) {
+  .chart p :not(.range):not(.percent) {
+    bottom: -8%;
+    font-size: 3rem;
+  }
+  .percent {
+    bottom: -5%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .container {
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .chart,
+  .number {
+    width: 40%;
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0 2rem;
+  }
+
+  .chart,
+  .number {
+    width: 28rem;
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    justify-content: center;
+  }
+}
